@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+}
+
+.breed-select {
+    display: none;
+    font-size: 16px;
+    width: 250px;
+}
+
+.breed-select.js-visible {
+    display: block;
+}
+
+.cat-info {
+    display: none;
+    align-items: center;
+    gap: 35px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: calc(100% - 200px);
+}
+
+.cat-info.js-visible {
+    display: flex;
+}
+
+.cat-image {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.evidance {
+    font-weight: 600;
+}
+
+.loader {
+    display: none;
+    color: yellow;
+}
+
+.loader.js-visible{
+    display: block;
+}
+
+.error {
+    display: none;
+    color: rgb(205, 6, 6);
+}
+
+.error.js-visible {
+    display: block;
+}
+
+.loader-info {
+    width: 48px;
+    height: 48px;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
